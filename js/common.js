@@ -8,6 +8,10 @@ $(document).ready(function(e) {
 		$("#msg").text(val + " changed");
 	});	
 	
+	$('.ops_link').click(function(e) {
+        console.log('test');
+		
+    });//click
 	
 });
 

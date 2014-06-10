@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.css">
+<title>demo  invoce</title>
+</head>
+
+<body>
+	<div class="header">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Invoice list demo</a>
+                </div><!--/navbar-header -->
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div><!--/header -->
+    
+    <div class="invouce-table-holder">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-12">
+                	<h3>invoice demo</h3>
+                    <div class="filter-holder">
+                    
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail2">Date from</label>
+                            <input type="text" class="form-control date-picker" id="exampleInputEmail2" placeholder="From">
+                            </div><!--/form-group -->
+                            
+                            <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword2">Date to</label>
+                            <input type="text" class="form-control date-picker" id="exampleInputPassword2" placeholder="To">
+                            </div><!--/form-group -->
+                        
+                            <button type="submit" class="btn btn-default">Find</button>
+                        </form>                    
+                    </div><!--/filter-holder -->
+                    <div class="table-holder">
+                    	<table class="table table-responsive table-bordered">
+                        	<thead>
+                            	<tr>
+                                	<th>#</th>
+                                    <th>ops-number</th>
+                                    <th>date</th>
+                                    <th>who did</th>
+                                    <th>invoice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>1</td>
+                                    <td><a href="#" class="ops_link" data-toggle="modal" data-target="#myModal">23445642344</a></td>
+                                    <td>07.26.2014</td>
+                                    <td>J.Petraitis</td>
+                                    <td><a href="#" class="btn btn-default">Make invoive</a></td>
+                                </tr>
+                            	<tr>
+                                	<td>2</td>
+                                    <td><a href="#" class="ops_link" data-toggle="modal" data-target="#myModal">23445642344</a></td>
+                                    <td>07.26.2014</td>
+                                    <td>J.Petraitis</td>
+                                    <td><a href="#" class="btn btn-default">Make invoive</a></td>
+                                </tr>
+                            	<tr>
+                                	<td>3</td>
+                                    <td><a href="#" class="ops_link" data-toggle="modal" data-target="#myModal">23445642344</a></td>
+                                    <td>07.26.2014</td>
+                                    <td>J.Petraitis</td>
+                                    <td><a href="#" >12345_inv.pdf</a></td>
+                                </tr>
+                            	<tr>
+                                	<td>4</td>
+                                    <td><a href="#" class="ops_link" data-toggle="modal" data-target="#myModal">23445642344</a></td>
+                                    <td>07.26.2014</td>
+                                    <td>J.Petraitis</td>
+                                    <td><a href="#">123245_inv.pdf</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--/table-holder -->
+                    
+                    <!-- /modal start -->
+                    
+                    <div class="modal fade"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Modal title</h4>
+                                </div><!--/modal-header -->
+                                
+                                <div class="modal-body">
+                                    <p>One fine body&hellip;</p>
+                                </div><!--/modal-body -->
+                            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div><!--/modal-footer -->
+                            
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                    
+                 <!--/ modal end -->   
+                    
+                    
+                </div><!-- /col-md-12-->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!--/invoice-table-holder -->
+    
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery-ui-1.9.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/common.js"></script>
+</body>
+</html>
